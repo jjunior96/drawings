@@ -22,13 +22,27 @@ export const Drawn = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     gap: ${theme.spacings.xsmall};
 
+    @media (max-width: 720px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
     & + div {
       margin-top: ${theme.spacings.xsmall};
     }
 
     img {
-      /* width: 100px; */
-      /* height: 100px; */
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    div {
+      /* max-width: 100%; */
+      /* overflow: hidden; */
+      box-shadow: ${theme.box.shadow};
     }
   `}
 `;
