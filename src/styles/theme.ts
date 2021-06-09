@@ -1,6 +1,7 @@
 export default {
   grid: {
-    container: '130rem',
+    container: '115rem',
+    header: '6rem',
     gutter: '3.2rem'
   },
   border: {
@@ -22,6 +23,7 @@ export default {
       large: '1.8rem',
       xlarge: '2.0rem',
       xxlarge: '2.8rem',
+      xxxlarge: '4.2rem',
       huge: '5.2rem'
     }
   },
@@ -30,10 +32,12 @@ export default {
     secondary: '',
     mainBg: '',
     lightBg: '',
-    white: '',
-    black: '',
+    white: '#fff',
+    black: '#000',
+    green: '#38933D',
+    blackOpacity: '#00000080',
     lightGray: '',
-    gray: '',
+    gray: '#191B1B',
     darkGray: '',
     red: ''
   },
